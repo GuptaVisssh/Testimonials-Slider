@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --font-color-- :#fff;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #140537, #600c4c, #a5214b, #d75638, #eb9812);
+}
+
+.container{
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 2.5rem 3rem;
+    height: 100vh;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--font-color--);
+}
+
+
+h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 2rem 0;
+    color: var(--font-color--);
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    height: 30rem;
+    width: 60rem;
+    padding: 3rem;
+    position: relative;
+    background: rgba(76, 201, 254, 0.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    & img{
+        width: 10rem;
+    }
+
+    & h2{
+        font-size: 1.8rem;
+        padding: 0.6rem 0;
+    }
+
+    & p{
+        font-size: 1.4rem;
+        line-height: 1.2;
+        letter-spacing: 0.06rem;
+    }
+
+}
+
+
+.nextBtn,.preBtn{
+    font-size: 2rem;
+    color: #4CC9FE;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    transition: all 0.3 ease;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+    -ms-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+}
+
+.preBtn{
+    position: absolute;
+    right: 16%;
+}
+
+.nextBtn{
+    position: absolute;
+    right: 11%;
+}
+
+
+.btn:hover{
+    background: #4CC9FE;
+    color: #600c4c;
+    font-size: 2.5rem;
+}
